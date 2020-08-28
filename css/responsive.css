@@ -1,0 +1,72 @@
+/*========================================
+
+    --> Function: this sets the responsive design
+    
+==========================================*/
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .navbar-collapse li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-me-left img, 
+    .about-me-left::before{
+        margin-left: 0;
+    }
+
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    
+    .navbar-collapse {
+        margin: 0 auto;
+        height: 80vh;
+        max-height: 100%;
+        max-width: 80vw;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        margin: 9px 0;
+    }
+
+    .navbar-collapse li a:hover::after{
+        width: 8%;
+    }
+
+    .navbar.sticky-navigation {
+        height: 4rem;
+    }
+
+    .sticky-navigation .navbar-collapse li a{
+        color: var(--secondary-color);
+    }
+
+    .sticky-navigation .navbar-collapse li a:hover::after{
+        width: 8%;
+    }
+
+    .about-me-right{
+        padding-top: 2rem;
+    }
+
+    .skill-items-left, 
+    .skill-items-right{
+        padding: 0;
+    }
+} 
+

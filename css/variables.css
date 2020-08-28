@@ -1,0 +1,12 @@
+
+
+:root{
+    /* color schemes */ 
+    --primary-color: #333333;
+    --secondary-color: #fff;
+    --highlight-color: #00b0dc;
+
+    /* font  */ 
+    --text-font: 'Roboto', normal;
+    --title-font: 'Montserrat', normal;
+}
