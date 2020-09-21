@@ -27,12 +27,12 @@ $('body').scrollspy({
 
 const typed = new Typed(".typed", {
     strings: [
-        "a Web Developer student!", 
-        "a professional Web Developer!",
-        "a Freelancer!"
+        "Jr. JS Full-Stack Developer", 
+        "Business Administration Professional",
+        "React.js & Node.js Enthusiast"
     ],
-    typeSpeed: 60,
-    backSpeed: 60,
+    typeSpeed: 40,
+    backSpeed: 40,
     loop: true
 });
 
@@ -53,43 +53,9 @@ skillbar.waypoint(function () {
 });
 
 
-
-//********* Portfolio - Isotope filter
-
-let $btns = $('.portfolio-section .port-nav button');
-
-
-    $btns.click(function (e) {
-
-        $('.portfolio-section .port-nav button').removeClass('active');
-        e.target.classList.add('active');
-
-        let selector = $(e.target).attr('data-filter');
-        $('.portfolio-section .port-items').isotope({
-            filter: selector
-        });
-
-        return false;
-    });
-
-
-
-
-    //****** Portfolio - Magnific Popup
-    
-
-$('.zoom,.zoom1').magnificPopup({
-    type: 'image',
-    gallery: {
-        enabled: true
-    }
-}); 
-
-
-
 //***** Testimonials - Owl carousel js
 
-$(".testimonial-slider").owlCarousel({
+$(".portfolio-slider").owlCarousel({
     loop:true,
     margin:30,
     nav:false,

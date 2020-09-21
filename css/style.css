@@ -13,7 +13,6 @@
 
 */
 
-
 /*===============================
 	1. Import
 ===============================*/
@@ -22,30 +21,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
 
-
-/*------   css variables    -----*/ 
+/*------   css variables    -----*/
 @import url(./variables.css);
-
 
 /*-------------      2. Default Section - Start       ----------------*/
 
-:root{
-    font-size: 15px;
+:root {
+  font-size: 15px;
 }
 
-
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-body{
-    font-family: var(--text-font), sans-serif;
-    width: 100%;
-    height: 100%;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--primary-color);
-    font-weight: 400;
+body {
+  font-family: var(--text-font), sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--primary-color);
+  font-weight: 400;
 }
 
 h1,
@@ -53,20 +50,20 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    color: var(--primary-color);
-    font-weight: 600;
-    font-family: var(--title-font), sans-serif;
+h6 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-family: var(--title-font), sans-serif;
 }
 
 p {
-    letter-spacing: 0;
-    line-height:1.8;
+  letter-spacing: 0;
+  line-height: 1.8;
 }
 
-a{
-    text-decoration: none;
-    /*-webkit-transition: all 0.4s;
+a {
+  text-decoration: none;
+  /*-webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;*/
 }
@@ -76,756 +73,735 @@ a{
     text-decoration: none;
 }*/
 
-a:hover{
-    outline:none;
-    text-decoration: none;
+a:hover {
+  outline: none;
+  text-decoration: none;
 }
 
-ul,li{
-    margin: 0;
-    padding: 0;
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.section-container{
-    padding: 4rem 0;
-    min-width: 100%;
-    background-color: var(--secondary-color);
+.section-container {
+  margin: 2rem 0;
+  padding: 5rem 0;
+  min-width: 100%;
+  background-color: var(--secondary-color);
 }
 
-.background-black{
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    color: var(--secondary-color);
-    text-align: center;
-    position: relative;
-    z-index: 1;
+.background-black {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: var(--secondary-color);
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
-.background-black:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    z-index: -1;
+.background-black:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
 .section-title {
-    text-align: center;
-    flex-direction: column; 
-    align-items: center;
-    padding-bottom: 5rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
 }
 
 .section-title h2 {
-    font-size: 2.6rem;
-    color: var(--primary-color);
-    letter-spacing: 1px;
-    font-weight: 400;
-    text-transform: uppercase;
+  font-size: 2.6rem;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.section-title h2 span{
-    color: var(--highlight-color);
+.section-title h2 span {
+  color: var(--highlight-color);
 }
 
-.header-bar{
-    background-color: var(--primary-color); 
-    height: 0.3rem;
-    width: 6.7rem;
-    /*margin: 0 auto*/;
+.header-bar {
+  background-color: var(--primary-color);
+  height: 0.3rem;
+  width: 6.7rem;
+  /*margin: 0 auto*/
 }
 
-.primary-button{
-    position: relative;
-    border: 3px solid var(--highlight-color);
-    border-radius: 5px;
-    color: var(--primary-color);
-    background: var(--secondary-color);
-    transition: background .6s ease 0s;
-    max-width: 10rem;
-    max-height: 5rem;
-    padding: 10px 15px;
-    text-transform: uppercase;
+.primary-button {
+  position: relative;
+  border: 3px solid var(--highlight-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  transition: 0.6s ease 0s;
+  max-width: 10rem;
+  max-height: 5rem;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: all 0.2 ease-out;
 }
 
-.primary-button:hover{
-    background: var(--highlight-color);
-    color: var(--secondary-color);
-    box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
+.primary-button:hover {
+  background: var(--highlight-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
+  transform: translateY(-3px) scale(1.1);
 }
-
-/*.container{
-    max-width: 90%;
-    width: 90%;
-    padding: 0 3rem;
-}
-*/
 
 /*-------------      2. Default Section - End       ----------------*/
 
 /*-------------      3. Header Section - Start       ----------------*/
 
-/*.main-menu{
-    -webkit-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    margin-top: 10px;
-}*/
-
-.navbar-section .navbar{
-    padding: 0;
-    margin: 0;
+.navbar-section .navbar {
+  padding: 0;
+  margin: 0;
 }
 
-.navbar{
-    border:0;
-    margin-bottom: 0;
-    height: 6.5rem;
+.navbar {
+  border: 0;
+  margin-bottom: 0;
+  height: 6.5rem;
 }
 
-.navbar-brand{
-    text-transform: uppercase;
-    font-size: 25px;
-    display: block;
-    color: var(--secondary-color);
-    font-weight: 800;
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 25px;
+  display: block;
+  color: var(--secondary-color);
+  font-weight: 800;
 }
-
 
 /* checking if following part is still needed */
-.navbar-brand:focus, .navbar-brand:hover {
-    text-decoration: none;
-    color: var(--secondary-color);
+.navbar-brand:focus,
+.navbar-brand:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .logo {
-    padding: 5px;
-    font-size: 32px;
-    letter-spacing: 3px;
+  padding: 5px;
+  font-size: 32px;
+  letter-spacing: 3px;
 }
 
 .logo span {
-    color: var(--highlight-color);
+  color: var(--highlight-color);
 }
 
-.navbar-nav{
-    margin-left: auto;
+.navbar-nav {
+  margin-left: auto;
 }
 
-.navbar-collapse li a{
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    font-weight: 400;
+.navbar-collapse li a {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-.navbar-collapse li a.active{
-    color: var(--highlight-color);
+.navbar-collapse li a.active {
+  color: var(--highlight-color);
 }
 
-.navbar-collapse li a:hover{
-    color: var(--highlight-color);
+.navbar-collapse li a:hover {
+  color: var(--highlight-color);
 }
 
-.navbar-collapse li a:hover::after{
-    border-bottom: 1px solid var(--highlight-color);
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 50%;
+.navbar-collapse li a:hover::after {
+  border-bottom: 1px solid var(--highlight-color);
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
 /* checking if following block is still needed*/
-.navbar-collapse li{
-    display: inline-block;
-    float: none;
+.navbar-collapse li {
+  display: inline-block;
+  float: none;
 }
 
-.navbar-nav li{
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+.navbar-nav li:not(:last-child) {
+  margin-right: 2rem;
 }
 
-.navbar-toggler i{
-    color: var(--secondary-color);
-    font-size: 25px;
-    border: none;
+.navbar-toggler i {
+  color: var(--secondary-color);
+  font-size: 25px;
+  border: none;
 }
 
-.navbar.sticky-navigation{
-    background: #fafafa;
-    -webkit-box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
-    box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
-    -webkit-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    height: 4.7rem;
+.navbar.sticky-navigation {
+  background: #fafafa;
+  -webkit-box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
+  box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  height: 4.7rem;
 }
 
-.sticky-navigation .logo{
-    color: var(--primary-color);
+.sticky-navigation .logo {
+  color: var(--primary-color);
 }
 
-.sticky-navigation .navbar-collapse li a{
-    color: var(--primary-color);
+.sticky-navigation .navbar-collapse li a {
+  color: var(--primary-color);
 }
 
-.sticky-navigation .navbar-collapse li a.active{
-    color: var(--highlight-color);
+.sticky-navigation .navbar-collapse li a.active {
+  color: var(--highlight-color);
 }
 
-.sticky-navigation .navbar-collapse li a:hover{
-    color: var(--highlight-color);
+.sticky-navigation .navbar-collapse li a:hover {
+  color: var(--highlight-color);
 }
 
 .sticky-navigation .navbar-collapse li a:hover::after
-/*.sticky-navigation .navbar-collapse li a.active::after*/{
-    border-bottom: 1px solid var(--highlight-color);
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 50%;
+/*.sticky-navigation .navbar-collapse li a.active::after*/ {
+  border-bottom: 1px solid var(--highlight-color);
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .sticky-navigation .navbar-toggler i,
 .sticky-navigation .navbar-toggler:hover,
-.sticky-navigation .navbar-toggler.active{
-    color: var(--primary-color);
-    font-size: 25px;
-    border: none;
+.sticky-navigation .navbar-toggler.active {
+  color: var(--primary-color);
+  font-size: 25px;
+  border: none;
 }
 
 .navbar-toggler:focus,
-.sticky-navigation .navbar-toggler:focus{
-    outline: none;
+.sticky-navigation .navbar-toggler:focus {
+  outline: none;
 }
-
 
 /*-------------      3. Header Section - End       ----------------*/
 
 /*-------------      4. Hero Section - Start       ----------------*/
 
-
-.hero-section{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url("../img/AboutMe/stats.jpg") center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    color: var(--secondary-color);
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 90vh;
-   
+.hero-section {
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)),
+    url('../img/Hero/Hero.jpg') center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--secondary-color);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 110vh;
 }
 
-.hero-section:before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 15rem;
-    background: url("../img/Hero/wave-large.png") center no-repeat;
-    background-size: cover;
-    width: 100%;
+.hero-section:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 12rem;
+  background: url('../img/Hero/wave-large.png') center no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
-/*!! noch auswählen was es braucht und was nicht + höhe des navbar noch abziehen für die zentrierung*/
-.hero-section .wrapper{
-    min-height: calc(90vh - 15rem); /*damit kann Text genau mittig platziert werden - die weiße fläche von der welle wird vom container abgezogen */
-    max-height: calc(90vh - 15rem);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-content {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-content h4,
-.hero-content h2{
-    color: var(--secondary-color);
-    text-transform: uppercase;
+.hero-content h2 {
+  color: var(--secondary-color);
+  text-transform: uppercase;
 }
 
-.hero-content h4{
-    margin-bottom: 2rem;
+.hero-content h2 {
+  margin-bottom: 2rem;
 }
 
-.hero-content h4 span{
-    color: var(--highlight-color);
-    letter-spacing: 0.6rem;
-    padding-left: 1rem;
+.hero-content h2 span {
+  color: var(--highlight-color);
+  letter-spacing: 0.6rem;
+  padding-left: 1rem;
 }
 
+.social-icon {
+  text-align: center;
+  margin-top: 4rem;
+}
 
-/*-------------      4. Hero Section - End       ----------------*/  
+.social-icon ul {
+  margin: 0;
+}
+
+.social-icon ul li {
+  display: inline;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.social-icon ul li a:hover {
+  transition: all 0.2 ease-out;
+}
+
+.social-icon ul li a:hover {
+  color: var(--highlight-color);
+  transform: translateY(-3px) scale(1.1);
+}
+
+.btn-movingBorder:link,
+.btn-movingBorder:visited {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+}
+
+.btn-movingBorder:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: transparent;
+  color: var(--highlight-color);
+  border: 1px solid transparent;
+}
+
+.btn-movingBorder:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: transparent;
+  color: var(--highlight-color);
+  border: 1px solid transparent;
+}
+
+.btn-movingBorder:hover:before {
+  animation: movingBorderRight 0.4s linear forwards;
+}
+
+.btn-movingBorder:hover:after {
+  animation: movingBorderLeft 0.4s linear forwards;
+}
+
+@keyframes movingBorderRight {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0%;
+    border-top-color: var(--highlight-color);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: var(--highlight-color);
+    border-right-color: var(--highlight-color);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@keyframes movingBorderLeft {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 0%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: var(--highlight-color);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--highlight-color);
+    border-left-color: var(--highlight-color);
+  }
+}
+/*-------------      4. Hero Section - End       ----------------*/
 
 /*-------------      5. About Me Section - Start       ----------------*/
 
-.about-me-left {
-    position: relative;
-    z-index: 10;
-    margin-bottom: 20px;
-    display: inline-block;
+.about-section {
+  margin-top: -4rem;
 }
 
-.about-section .about-me-left .wrapper{
-    margin: 0;
-    padding: 0; 
-    float: left;
+.about-me-left {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.about-section .about-me-left .wrapper {
+  margin: 0;
+  padding: 0;
+  float: left;
 }
 
 .about-me-left img {
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    max-width: 220px;
-    max-height: 330px;
-    width: 100%;
-    -moz-box-shadow:    4px 4px 6px rgba(0,0,0,.25);
-    -webkit-box-shadow: 4px 4px 6px rgba(0,0,0,.25);
-    box-shadow:         4px 4px 6px rgba(0,0,0,.25);
-    margin-left: 3rem;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 220px;
+  max-height: 330px;
+  width: 100%;
+  -moz-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  margin-left: 3rem;
+  border-radius: 5px;
 }
 
 .about-me-left::before {
-    background: #dbdada;
-    content: "";
-    width: 100%;
-    height: 100%;
-    max-width: 220px;
-    max-height: 330px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-30px, 30px);
-    z-index: -10;
-    -moz-box-shadow: 4px 4px 6px rgba(0,0,0,.25);
-    -webkit-box-shadow: 4px 4px 6px rgba(0,0,0,.25);
-    box-shadow: 4px 4px 6px rgba(0,0,0,.25);
-    margin-left: 3rem;
+  background: #dbdada;
+  content: '';
+  width: 100%;
+  height: 100%;
+  max-width: 220px;
+  max-height: 330px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-30px, 30px);
+  z-index: -10;
+  -moz-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  margin-left: 3rem;
+  border-radius: 5px;
 }
 
-.profile-summary, 
-.skills, 
-.button{
-    padding: 0 1.5rem;
+.profile-summary,
+.skills,
+.button {
+  padding: 0 1.5rem;
 }
 
-.skill-items-left{
-    padding: 0 1.5rem 0 0;
+.skill-items-left {
+  padding: 0 1.5rem 0 0;
 }
 
-.skill-items-right{
-    padding: 0 0 0 1.5rem;
+.skill-items-right {
+  padding: 0 0 0 1.5rem;
 }
 
-.skill-item{
-    padding: 0;
+.skill-item {
+  padding: 0;
 }
 
 .skillbar {
-    margin-bottom: 1.6rem;
-    position: relative;
-    width: 100%;
-    display: block;
+  margin-bottom: 1.6rem;
+  position: relative;
+  width: 100%;
+  display: block;
 }
 
 .skillbar .skillbar-title {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 1rem;
-    color: var(--primary-color);
-    margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 0;
 }
 
 .skillbar .skillbar-percent {
-    float: right;
-    vertical-align: middle;
-    font-size: 1rem;
-    color: var(--primary-color);
-    margin-bottom: 0;
+  float: right;
+  vertical-align: middle;
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 0;
 }
 
 .skillbar-bar {
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 0.4rem;
-    border-radius: 2rem;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 0.4rem;
+  border-radius: 2rem;
 }
 
 .skillbar-bar .skillbar-child {
-    width: 0;
-    height: 100%;
-    background-color: var(--highlight-color);
-    -webkit-transition-property: width, background-color;
-    -o-transition-property: width, background-color;
-    transition-property: width, background-color;
-    border-radius: 0.3rem;
+  width: 0;
+  height: 100%;
+  background-color: var(--highlight-color);
+  -webkit-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  border-radius: 0.3rem;
 }
 
-/*-------------      5. About Me Section - End       ----------------*/  
-
-/*-------------      6. Why Me Section - Start       ----------------*/
-
-.why-me-section{
-    background-image: url(../img/AboutMe/stats.jpg);
-}
-
-.why-me-section h2,
-.why-me-section h4,
-.why-me-section h5{
-    color: var(--secondary-color);
-}
-
-.why-me-section .section-title .header-bar{
-    background-color: var(--secondary-color);
-}
-
-.why-me-container{
-   justify-content: space-evenly; 
-}
-
-.why-me-item {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 10px 40px 10px;
-}
-
-.why-me-icon{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 3rem;
-    background-color: var(--highlight-color);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.why-me-icon i {
-    font-size: 50px;
-}
-
-.why-me-content{
-    margin-top: 1.5rem;
-}
-
-.why-me-content h5{
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-top: 1.5rem;
-}
-
-
-/*-------------      6. Why Me Section - End       ----------------*/  
+/*-------------      5. About Me Section - End       ----------------*/
 
 /*-------------      7. Portfolio Section - Start       ----------------*/
-
-.port-nav{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.portfolio-section {
+  background-image: url(../img/Testimonials/portfolio-background.jpg);
 }
 
-.port-nav .primary-button{
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    width: 9.5rem;
-    height: 5rem;
+.portfolio-section .section-title h2 {
+  color: var(--secondary-color);
 }
 
-.port-item {
-    padding: 0;
-    overflow: hidden;
+.portfolio-section .section-title .header-bar {
+  background-color: var(--secondary-color);
 }
 
-.port-item img {
-    width: 100%;
+#portfolio .card {
+  margin: 1rem;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: left;
+  width: 20rem;
+  height: 30rem;
+  position: relative;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(92, 92, 92, 0.8);
+  transition: 0.3s;
 }
 
-.port-item .wrapper {
-    margin: 20px;
-    position: relative;
-    transition: .9s;
-    float: left;
+.card a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
-.overlay {
-    /*erstellt zweites item (overlay) in der gleichen position wie das Basis Item - durch opacity=0 wird es versteckt*/
-    position: absolute;     
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    /*setzt farbe und browser-kompatibiltäts-Eigenschaften*/
-    background: var(--highlight-color);
-    opacity: 0;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-    cursor: crosshair;
+.card a:first-of-type {
+  height: 100%;
+  width: 100%;
 }
 
-/*stylt den Inhalt des zweiten Items (overlay) --> hier den Text --> also wie eine normale div box und text darin
---> effekt des visuellen verschiebens beim hovern entsteht, weil erst die festgelegte position um translateY(-30px) verschoben wird und erst beim hovern auf translateY(0px) gesetzt wird */
-.overlay .overlay-inner {
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    text-align: center;
+.card-picture {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  height: 40%;
+  width: 100%;
 }
 
-.overlay .overlay-inner h4 {
-    color: var(--secondary-color) !important;
-    margin-bottom: 0 !important;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px);
-    text-transform: uppercase;
-    font-size: 25px;
-    letter-spacing: 1px;
+.card-picture-1 {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/Portfolio/AsteroidsGame.jpeg') center;
+  background-size: cover;
 }
 
-.overlay .overlay-inner p {
-    color: var(--secondary-color);
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
-    margin-top: 10px;
+.card-picture-2 {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/Portfolio/ToDoApp.JPG') center;
+  background-size: cover;
 }
 
-/*bewirkt hier das "austauschen" zwischen den zwei Items*/
-.port-item:hover .overlay .overlay-inner h4 {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
+.card-picture-3 {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/Portfolio/microservices-500.png'), rgba(0, 0, 0, 0.4) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.port-item:hover .overlay .overlay-inner p {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
+.card-picture-3 svg {
+  height: 50%;
+  width: 50%;
+  fill: rgb(66, 66, 66);
+  font-size: 5rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.1rem;
 }
 
-
-/*erst beim hovern wird das ganze Element sichtbar*/
-.port-item a:hover .overlay {
-    opacity: 1;
+.card-picture-4 {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/Portfolio/microservices-500.png'), rgba(0, 0, 0, 0.4) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: right;
 }
 
-
-/*-------------      7. Portfolio Section - End       ----------------*/ 
-
-/*-------------      8. Testimonials Section - Start       ----------------*/
-
-
-.testimonials-section{
-    background-image: url(../img/AboutMe/stats.jpg);
+.card-picture-4 i {
+  color: rgb(66, 66, 66);
+  font-size: 5rem;
+  margin-top: 1.5rem;
+  margin-right: 1.4rem;
 }
 
-.testimonials-section .section-title h2{
-    color: var(--secondary-color);
+.card-picture-5 {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../img/Portfolio/SilverSurfer.png') top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.testimonials-section .section-title .header-bar{
-    background-color: var(--secondary-color);
+.card-header {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: black;
+  background: transparent;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 7rem;
+  width: 100%;
+  border: none;
+  line-height: 2.5rem;
 }
 
-.testimonial-item {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    border-radius: 10px;
-    padding: 2rem;
-    text-align: left;
-   
+.card-header-wrapper {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.2rem 0.4rem;
+  box-decoration-break: clone;
 }
 
-.testimonial-content i {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    color: var(--highlight-color);
+.sub-title {
+  font-size: 1rem;
+  font-style: italic;
 }
 
-.testimonial-item p {
-    margin-bottom: 1rem;
-    text-align: center;
+.card-footer {
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
 }
 
-.testimonial-item h2{
-    margin: 0.75rem 0 0;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-
-.testimonial-item h3 {
-    margin: 10px 0 0;
-    font-weight: 100;
-    font-size: 1rem;
-}
-
-.testimonial-img {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: auto;
-}
-
-.testimonial-img img {
-    width: 100%;
-    height: 100%;
-}
-
-.owl-dots{
-    text-align: center;
-    margin-top: 2rem;
+.owl-dots {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .owl-dot {
-    display: inline-block;
-    height: 0.7rem !important;
-    width: 0.7rem !important;
-    background-color: var(--secondary-color) !important;
-    opacity: 0.8;
-    border-radius: 50%;
-    margin: 0 0.3rem;
+  display: inline-block;
+  height: 0.7rem !important;
+  width: 0.7rem !important;
+  background-color: var(--secondary-color) !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 0.3rem;
 }
 
 .owl-dot.active {
-    background-color: var(--highlight-color) !important;
+  background-color: var(--highlight-color) !important;
 }
 
-
-/*-------------      8. Testimonials Section - End       ----------------*/
-
-/*-------------      9. Contact Section - Start       ----------------*/
-
-.left-contact{
-    margin-bottom: 3.5rem;
+.owl-dot.active,
+.owl-dot:focus {
+  outline: none;
 }
 
-.left-contact-text {
-    margin-bottom: 25px;
-}
-
-.left-contact-text h2{
-    margin-top: 2px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 3px;
-}
-
-.left-contact-text p{
-    line-height: 21px;
-    letter-spacing: 2px;
-    font-size: 11px;
-    color: #777;
-}
-
-.left-contact-text i{
-    color: var(--highlight-color);
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-
-#contact-form {
-    padding: 2rem;
-    box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
-    margin-left: 0;
-    /*margin-bottom: 40px;
-    position: relative;*/
-}
-
-.contact-section .form-control{
-    /*border:2px solid #a2a2a2;
-    box-shadow: none;
-    padding: 6px;
-    border-radius: 0;
-    margin-bottom: 30px;*/
-
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid gray;
-    padding: 1.5rem 1rem;
-}
-
-.contact-section .form-control::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #777;
-  }
-
-.contact-section textarea.form-control{
-   /* padding: 6px;*/
-    height: 250px;
-   /* margin-bottom: 30px;*/
-}
-
-
-/*-------------      9. Contact Section - End       ----------------*/
+/*-------------      7. Portfolio Section - End       ----------------*/
 
 /*-------------      10. Footer Section - Start       ----------------*/
 
-.footer-section{
-    background-color: var(--highlight-color);
-    width: 100%;
-    height: 40vh;                                     
-    position: relative;
+.footer-section {
+  background-color: var(--highlight-color);
+  width: 100%;
+  height: 300px;
+  position: relative;
 }
 
-.footer-section::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 17rem;
-    background: url("../img/Hero/wave-large-reversed.png") no-repeat;
-    background-size: cover;
-    width: 100%;
+.footer-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17rem;
+  background: url('../img/Hero/wave-large-reversed.png') no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
-.footer-section .container{
-    position: absolute;
-    bottom: 5%;
-    min-width:100%;
-    text-align: center;
-    z-index: 10000;
-    color: var(--secondary-color);
-    
+.footer-section .container {
+  position: absolute;
+  bottom: 0%;
+  min-width: 100%;
+  text-align: center;
+  z-index: 10000;
+  color: var(--secondary-color);
 }
 
 /*-------------      10. Footer Section - End       ----------------*/

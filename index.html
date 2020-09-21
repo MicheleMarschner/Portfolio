@@ -1,513 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="./img/Portfolio-picture.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michèle Marschner</title>
 
-<!-------------      Import Css Section - Start       ---------------->
+    <!-------------      Import Css Section - Start       ---------------->
 
-<!--  Bootstrap css file  -->
-<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--  Bootstrap css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
-<!--Font Awesome css-->
-<link rel="stylesheet" href="./css/extern-css/font-awesome.min.css">
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="./css/extern-css/font-awesome.min.css" />
 
-<!--line icon css-->
-<link rel="stylesheet" href="./css/extern-css/line-icons.min.css">
+    <!--line icon css-->
+    <link rel="stylesheet" href="./css/extern-css/line-icons.min.css" />
 
-<!--Popup css-->
-<link rel="stylesheet" href="./css/extern-css/magnific-popup.css">
+    <!--Popup css-->
+    <link rel="stylesheet" href="./css/extern-css/magnific-popup.css" />
 
-<!--Owl carousel css-->
-<link rel="stylesheet" href="./css/extern-css/owl.carousel.css">
-<link rel="stylesheet" href="./css/extern-css/owl.theme.default.css">
+    <!--Owl carousel css-->
+    <link rel="stylesheet" href="./css/extern-css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/extern-css/owl.theme.default.css" />
 
-<!--  custom css file  -->
-<link rel="stylesheet" href="./css/style.css">
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-<!--  custom responsive css file  -->
-<link rel="stylesheet" href="./css/responsive.css">
+    <!--  custom responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
 
+    <!-------------      Import Css Section - End       ---------------->
+  </head>
 
-<!-------------      Import Css Section - End       ---------------->
-
-
-</head>
-
-<body>
+  <body>
     <!-------------      Header Section - Start       ---------------->
 
     <div id="navigation" class="navbar-section">
+      <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container navbar-container">
+          <a href="index.html" class="navbar-brand"
+            ><span class="logo">Mich<span>èle</span></span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsible-navmenu"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
 
-        <nav class="navbar fixed-top navbar-expand-md">
-            <div class="container navbar-container"> 
-        
-                    <a href="index.html" class="navbar-brand"><span class="logo">Mich<span>èle</span></span></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-navmenu"> 
-                        <i class="fa fa-bars"></i>
-                    </button>
-        
-                <div id="collapsible-navmenu" class="collapse navbar-collapse">
-        
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#home"><i class="fa fa-home"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </nav>
-
+          <div id="collapsible-navmenu" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home"><i class="fa fa-home"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <!-------------      Header Section - End       ---------------->
 
-    <!-------------      Hero Section - Start       ---------------->
-    <div id="home" class="hero-section">
+    <!-------------      Hero Section - Start      
+    <section id="home" class="hero-section">
+        <div id="particles-js"></div>
         <div class="container wrapper">
-            <div class="hero-content">
-                <h4>Hi, my name is <span class="highlight text-uppercase">Michèle Marschner</span>.</h4>
-                <h2>I want to become <span class="typed"></span></span></h2>
+        
+            <div class="intro animate-scale">                      
+                <div class="hero-content">
+                    <h4>Hi, I am<span class="highlight text-uppercase">Michèle</span>.</h4>
+                    <h2>I want to become <span class="typed"></span></span></h2>
+                </div>
+
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="mailto:michele.marschner@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="https://linkedin.com/MicheleMarschner" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/MicheleMarschner" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div> 
-    </div> 
-    
-    <!-------------      Hero Section - End       ---------------->  
+    </section> 
+ ---------------->
+    <section class="banner-area hero-section" id="home">
+      <div id="particles-js"></div>
+
+      <div class="hero-content">
+        <h2>Hi, I am<span class="highlight text-uppercase">Michèle</span>.</h2>
+        <h4><span class="typed"></span></h4>
+        <div class="social-icon">
+          <ul>
+            <li>
+              <a
+                class="btn-movingBorder"
+                href="mailto:michele.marschner@gmail.com"
+                target="_blank"
+                title="Email"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="btn-movingBorder"
+                href="https://www.linkedin.com/in/mich%C3%A8le-marschner-89578a115/"
+                target="_blank"
+                title="Linkedin"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="btn-movingBorder"
+                href="https://github.com/MicheleMarschner"
+                target="_blank"
+                title="GitHub"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-------------      Hero Section - End       ---------------->
 
     <!-------------      About Me Section - Start       ---------------->
 
-    <div id="about" class="about-section section-container">
-        <div class="container">
-
-            <div class="row section-title">
-                <h2>about <span>me</span></h2>
-                <div class="header-bar"></div>
-            </div>
-
-            <div class="row"> 
-
-                <div class="col-md-4 col-sm-12 about-me-left">
-                    <div class="wrapper">
-                        <img src="./img/AboutMe/aboutMe1.jpg" alt="Profile picture">
-                    </div>
-                </div> 
-
-                <div class="col-md-8 ml-auto about-me-right">
-
-                    <div class="row profile-summary">
-                        <p>Summary asellus tempus porttitor estnecer intiorer. Nulla facilisi. Nulla cursus velit et faucibus lobortis.</p> 
-                        <p>In tincider diam metus tincede mollis aryi egestas quis. Nunc vitae felis lectus. Pellentesque imperdiet augue 
-                            erat aliquer interdume turpis congue. Aliquam euismod turpis.</p>
-                    </div>
-
-                    <div class="row skills">                                    
-                        <div class="col-md-6 col-sm-12 skill-items-left">
-                            <div class="col-md-12 skill-item">
-
-                                <div class="skillbar" data-percent="70%"> 
-
-                                    <p class="skillbar-title">HTML / CSS</p> 
-                                    <p class="skillbar-percent">70%</p> 
-
-                                    <div class="skillbar-bar">
-                                        <div class="skillbar-child"></div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="col-md-12 skill-item">
-
-                                <div class="skillbar" data-percent="60%"> 
-
-                                    <p class="skillbar-title">JavaScript (ES6)</p> 
-                                    <p class="skillbar-percent">60%</p> 
-
-                                    <div class="skillbar-bar">
-                                        <div class="skillbar-child"></div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="col-md-12 skill-item">
-
-                                <div class="skillbar" data-percent="40%"> 
-
-                                    <p class="skillbar-title">React JS</p> 
-                                    <p class="skillbar-percent">40%</p> 
-
-                                    <div class="skillbar-bar">
-                                        <div class="skillbar-child"></div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-12 skill-items-right">
-                            <div class="col-md-12 skill-item">
-
-                                <div class="skillbar" data-percent="30%"> 
-
-                                    <p class="skillbar-title">Node JS / Express</p> 
-                                    <p class="skillbar-percent">30%</p> 
-
-                                    <div class="skillbar-bar">
-                                        <div class="skillbar-child"></div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="col-md-12 skill-item">
-
-                                <div class="skillbar" data-percent="30%">
-
-                                    <p class="skillbar-title">SQL & MongoDB</p> 
-                                    <p class="skillbar-percent">30%</p> 
-
-                                    <div class="skillbar-bar">
-                                        <div class="skillbar-child"></div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="row button">
-                        <a href="https://wonderful-shockley-e67935.netlify.app/" class="down-btn primary-button" >show cv</a>
-                    </div>
-
-                </div>
-            </div>
-
+    <section id="about" class="about-section section-container">
+      <div class="container">
+        <div class="row section-title">
+          <h2>about <span>me</span></h2>
+          <div class="header-bar"></div>
         </div>
-    </div>
 
-    <!-------------      About Me Section - End       ---------------->  
+        <div class="row">
+          <div class="col-md-4 col-sm-12 about-me-left">
+            <div class="wrapper">
+              <img src="./img/AboutMe/aboutMe1.jpg" alt="Profile picture" />
+            </div>
+          </div>
 
-    <!-------------      Why Me Section - Start       
-
-    <div id="why-me" class="why-me-section section-container background-black">
-        <div class="container">
-
-            <div class="row section-title">
-                <h2>why <span>me</span></h2>
-                <div class="header-bar"></div>
+          <div class="col-md-8 ml-auto about-me-right">
+            <div class="row profile-summary">
+              <p>
+                I am a versatile and analytical young IT professional with a
+                strong background in business administration and knowledge
+                across various industries such as finance, ecommerce, food and
+                media.
+              </p>
+              <p>
+                Equipped with a quick perception and an insatiable curiosity, I
+                am always looking to expand my comfort zone.
+              </p>
             </div>
 
-            <div class="row why-me-container">
+            <div class="row skills">
+              <div class="col-md-6 col-sm-12 skill-items-left">
+                <div class="col-md-12 skill-item">
+                  <div class="skillbar" data-percent="70%">
+                    <p class="skillbar-title">HTML / CSS</p>
+                    <p class="skillbar-percent">70%</p>
 
-                <div class="col-md-3 col-sm-6 why-me-item">
-                    <div class="why-me-icon">
-                        <i class="icon-compass"></i>
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
                     </div>
-
-                    <div class="why-me-content">
-                        <h5>Web Design</h5>
-                        <p>Lorem ipe nam neque nulla placeat quam repudiandae similique ullam?</p>
-                    </div>
+                  </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 why-me-item">
-                    <div class="why-me-icon">
-                        <i class="icon-compass"></i>
-                    </div>
+                <div class="col-md-12 skill-item">
+                  <div class="skillbar" data-percent="60%">
+                    <p class="skillbar-title">JavaScript (ES6)</p>
+                    <p class="skillbar-percent">60%</p>
 
-                    <div class="why-me-content">
-                        <h5>Web Design</h5>
-                        <p>Lorat quam repudiandae similique ullam?</p>
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
                     </div>
+                  </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 why-me-item">
-                    <div class="why-me-icon">
-                        <i class="icon-compass"></i>
-                    </div>
+                <div class="col-md-12 skill-item">
+                  <div class="skillbar" data-percent="50%">
+                    <p class="skillbar-title">React JS</p>
+                    <p class="skillbar-percent">50%</p>
 
-                    <div class="why-me-content">
-                        <h5>Web Design</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id laboriosam 
-                            maxime nam neque nulla placeat quam repudiandae similique ullam?</p>
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 skill-items-right">
+                <div class="col-md-12 skill-item">
+                  <div class="skillbar" data-percent="40%">
+                    <p class="skillbar-title">Node JS / Express</p>
+                    <p class="skillbar-percent">40%</p>
+
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 why-me-item">
-                    <div class="why-me-icon">
-                        <i class="icon-compass"></i>
-                    </div>
+                <div class="col-md-12 skill-item">
+                  <div class="skillbar" data-percent="30%">
+                    <p class="skillbar-title">SQL & MongoDB</p>
+                    <p class="skillbar-percent">30%</p>
 
-                    <div class="why-me-content">
-                        <h5>Web Design</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id laboriosam 
-                            maxime nam neque nulla placeat quam repudiandae similique ullam?</p>
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
                     </div>
+                  </div>
                 </div>
-
+              </div>
             </div>
 
+            <div class="row button">
+              <a
+                href="https://cv-en-e67935.netlify.app"
+                class="primary-button"
+                target="_blank"
+                >show cv</a
+              >
+            </div>
+          </div>
         </div>
-    </div>
-        Why Me Section - End       ---------------->  
+      </div>
+    </section>
 
-    <!-------------      Portfolio Section - Start       ---------------->
-    
-    <div id="portfolio" class="portfolio-section section-container">
-        <div class="container">
+    <!-------------      About Me Section - End       ---------------->
 
-            <div class="row section-title">
-                <h2>my <span>portfolio</span></h2>
-                <div class="header-bar"></div>
-            </div>
+    <!-------------     Portfolio Section - Start       ---------------->
 
-
-            <!-------------
-
-            <div class="port-nav">
-                <button class="img-filter primary-button active" type="button" data-filter="*">All</button>
-                <button class="img-filter primary-button" type="button" data-filter=".design">Web Design</button>
-                <button class="img-filter primary-button" type="button" data-filter=".web">App Development</button>
-                <button class="img-filter primary-button" type="button" data-filter=".video">Photography</button>
-            </div>
-
-            ---------------->
-
-            <div class="row port-items" id="img-filter">
-
-                <div class="col-md-4 col-sm-6 col-xs-12 port-item design video">
-                    <div class="wrapper">
-                        <a href="https://flamboyant-northcutt-def783.netlify.app" target="_blank" class="zoom1">
-                            <img src="./img/Portfolio/AsteroidsGame.jpeg" alt="portfolio Asteroids Game" class="img-fluid">
-                            <div class="overlay">
-                                <div class="overlay-inner">
-                                    <h4>Project One</h4>
-                                    <p>Asteroids Game</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div> 
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12 port-item video">
-                    <div class="wrapper">
-                        <a href="https://screenrec.com/share/qVgFQzXTw7" target="_blank" class="zoom1">
-                            <img src="./img/Portfolio/ToDoApp.JPG" alt="portfolio ToDo App" class="img-fluid">
-                            <div class="overlay">
-                                <div class="overlay-inner">
-                                    <h4>Project Two</h4>
-                                    <p>ToDo App</p>
-                                </div>
-                            </div>
-                        </a>  
-                    </div>
-                </div>
-                   
-                <div class="col-md-4 col-sm-6 col-xs-12 port-item design video">
-                    <div class="wrapper">
-                        <a href="https://github.com/MicheleMarschner/Silver-Server" target="_blank" class="zoom1">
-                            <img src="./img/Portfolio/Senioren App.JPG" alt="portfolio Silver Surfer App" class="img-fluid">
-                            <div class="overlay">
-                                <div class="overlay-inner">
-                                    <h4>Project Three</h4>
-                                    <p>Silver Surfer App [Coming soon]</p>
-                                </div>
-                            </div>
-                        </a>  
-                    </div>
-                </div>
-
-                <!-------------
-
-                <div class="col-md-4 col-sm-6 col-xs-12 port-item design web" >
-                    <div class="wrapper">
-                        <a href="./img/Portfolio/1.jpg" class="zoom1">
-                            <img src="./img/Portfolio/1.jpg" alt="portfolio image_4" class="img-fluid"> 
-                            <div class="overlay">
-                                <div class="overlay-inner">
-                                    <h4>Project Four</h4>
-                                    <p>Brand, Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12 port-item web video design" >
-                    <div class="wrapper">
-                        <a href="./img/Portfolio/1.jpg" class="zoom1">
-                            <img src="./img/Portfolio/1.jpg" alt="portfolio image_5" class="img-fluid"> 
-                            <div class="overlay">
-                                <div class="overlay-inner">
-                                    <h4>Project Five</h4>
-                                    <p>Brand, Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12 port-item web video" >
-                    <div class="wrapper">
-                        <a href="./img/Portfolio/1.jpg" class="zoom1">
-                            <img src="./img/Portfolio/1.jpg" alt="portfolio image_6" class="img-fluid"> 
-                            <div class="overlay">
-                                <div class="overlay-inner">
-                                    <h4>Project Six</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12 port-item web video" >
-                    <div class="wrapper">
-                        <a href="./img/Portfolio/1.jpg" class="zoom1">
-                            <img src="./img/Portfolio/1.jpg" alt="portfolio image_7" class="img-fluid"> 
-                            <div class="overlay">
-                                <div class="overlay-inner">
-                                    <h4>Project Seven</h4>
-                                    <p>Brand, Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>  
-                </div>
-
-                ---------------->
-                
-            </div>
-
-
+    <section
+      id="portfolio"
+      class="portfolio-section section-container background-black"
+    >
+      <div class="container">
+        <div class="row section-title">
+          <h2>my <span>portfolio</span></h2>
+          <div class="header-bar"></div>
         </div>
-    </div>
 
-    <!-------------      Portfolio Section - End       ---------------->  
+        <div class="row">
+          <div class="col-md-12">
+            <div class="portfolio-slider owl-carousel">
+              <!--      First Project     -->
+              <div class="card">
+                <a
+                  href="https://asteroids-game-def783.netlify.app"
+                  target="_blank"
+                >
+                  <div class="card-picture card-picture-1"></div>
 
+                  <h4 class="card-header">
+                    <span class="card-header-wrapper">Asteroids Game</span>
+                  </h4>
 
-    <!-------------      Testimonials Section - Start       
-    
-    <div id="testimonials" class="testimonials-section section-container background-black">
-        <div class="container">
+                  <div class="card-body">
+                    <p class="card-text">
+                      <b>Aim: </b>deepening of fundamental JavaScript knowledge,
+                      such as OOP, while exploring basic game logic
+                    </p>
+                    <p class="card-text">
+                      <b>Tech Stack: </b>Vanilla JavaScript
+                    </p>
+                  </div>
 
-            <div class="row section-title">
-                <h2>client <span>testimonials</span></h2>
-                <div class="header-bar"></div>
-            </div>
+                  <div class="card-footer d-flex justify-content-between">
+                    <small class="text-muted"
+                      >before the start of the bootcamp</small
+                    >
+                    <a
+                      href="https://github.com/MicheleMarschner/AsteroidsGame"
+                      target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </a>
+              </div>
 
-            <div class="row">
+              <!--      Second Project     -->
+              <div class="card">
+                <a href="https://todo-app-db1295.netlify.app" target="_blank">
+                  <div class="card-picture card-picture-2"></div>
 
-                <div class="col-md-12">
-                    <div class="testimonial-slider owl-carousel">
+                  <h4 class="card-header">
+                    <span class="card-header-wrapper">ToDo App</span>
+                  </h4>
 
-                        <div class="testimonial-item">
-                            <div class="testimonial-content">
-                                <i class="fa fa-quote-left"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id laboriosam 
-                                    maxime nam neque nulla placeat quam repudiandae similique ullam?</p>
-                            </div>
-    
-                            <div class="row">
-                                <div class="col-8 pr-0">
-                                    <h2>Jack Frost</h2> 
-                                    <h3>CEO, Lala GmbH</h3> 
-                                </div>
-                                <div class="col-4 pl-0 ml-auto">
-                                    <div class="testimonial-img">
-                                        <img src="./img/Testimonials/testi4.jpg" alt="testimonial image"> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      <b>Aim: </b>developing a fullstack application with a
+                      focus on functional components and hooks in React
+                    </p>
+                    <p class="card-text">
+                      <b>Tech Stack: </b>JavaScript | Frontend: ReactJS &
+                      Bootstrap | Backend: NodeJS / Express, MongoDB / Mongoose
+                      | 3rd party APIs
+                    </p>
+                  </div>
 
-                        <div class="testimonial-item">
-                            <div class="testimonial-content">
-                                <i class="fa fa-quote-left"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id laboriosam 
-                                    maxime nam neque nulla placeat quam repudiandae similique ullam?</p>
-                            </div>
-    
-                            <div class="row">
-                                <div class="col-8 pr-0">
-                                    <h2>John Doe</h2> 
-                                    <h3>CEO, ABC Network</h3>
-                                </div>
-                                <div class="col-4 pl-0 ml-auto">
-                                    <div class="testimonial-img">
-                                        <img src="./img/Testimonials/testi4.jpg" alt="testimonial image"> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-item">
-                            <div class="testimonial-content">
-                                <i class="fa fa-quote-left"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id laboriosam 
-                                    maxime nam neque nulla placeat quam repudiandae similique ullam?</p>
-                            </div>
-    
-                            <div class="row">
-                                <div class="col-8 pr-0">
-                                    <h2>Simon Meier</h2> 
-                                    <h3>CEO, ? AGB</h3>
-                                </div>
-                                <div class="col-4 pl-0 ml-auto">
-                                    <div class="testimonial-img">
-                                        <img src="./img/Testimonials/testi4.jpg" alt="testimonial image"> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-item">
-                            <div class="testimonial-content">
-                                <i class="fa fa-quote-left"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id laboriosam 
-                                    maxime nam neque nulla placeat quam repudiandae similique ullam?</p>
-                            </div>
-    
-                            <div class="row">
-                                <div class="col-8 pr-0">
-                                    <h2>Dieter Nur</h2> 
-                                    <h3>CEO, Comicer AG</h3> 
-                                </div>
-                                <div class="col-4 pl-0 ml-auto">
-                                    <div class="testimonial-img">
-                                        <img src="./img/Testimonials/testi4.jpg" alt="testimonial image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
+                  <div class="card-footer d-flex justify-content-between">
+                    <small class="text-muted"
+                      >after 2 months in the bootcamp</small
+                    >
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="https://github.com/MicheleMarschner/ToDoApp-server"
+                        target="_blank"
+                        ><i class="fa fa-github pr-1"></i
+                      ></a>
+                      <a
+                        href="https://github.com/MicheleMarschner/ToDoApp-client"
+                        target="_blank"
+                        ><i class="fa fa-github"></i
+                      ></a>
                     </div>
-                </div>
-    
+                  </div>
+                </a>
+              </div>
+
+              <!--      Third Project     -->
+              <div class="card">
+                <a href="#" target="_blank">
+                  <div class="card-picture card-picture-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      enable-background="new 0 0 32 32"
+                      viewBox="0 0 32 32"
+                    >
+                      <path d="M18,11c0-1.1-0.9-2-2-2s-2,0.9-2,2v2h4V11z" />
+                      <path
+                        d="M4,7v8c0,8.3,4.4,10.8,10.4,14.2l1.1,0.6C15.7,30,15.8,30,16,30s0.3,0,0.5-0.1l1.1-0.6c6-3.5,10.4-6,10.4-14.3V7
+                        c0-0.4-0.3-0.8-0.7-0.9l-11-4c-0.2-0.1-0.5-0.1-0.7,0l-11,4C4.3,6.2,4,6.6,4,7z M10,16c0-1.3,0.8-2.4,2-2.8V11c0-2.2,1.8-4,4-4
+                        s4,1.8,4,4v2.2c1.2,0.4,2,1.5,2,2.8v3c0,3.3-2.7,6-6,6s-6-2.7-6-6V16z"
+                      />
+                      <path
+                        d="M16,16c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1s1-0.4,1-1v-2C17,16.4,16.6,16,16,16z"
+                      />
+                    </svg>
+                  </div>
+
+                  <h4 class="card-header">
+                    <span class="card-header-wrapper">Auth Service</span>
+                  </h4>
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      <b>Aim: </b>part of microservice architecture series to
+                      create standalone & reusable services -- Authentification
+                    </p>
+                    <p class="card-text">
+                      <b>Tech Stack: </b>JavaScript | Backend: NodeJS / Express,
+                      MongoDB / Mongoose, PassportJS
+                    </p>
+                  </div>
+
+                  <div class="card-footer d-flex justify-content-between">
+                    <small class="text-muted"
+                      >after 15 weeks in the bootcamp</small
+                    >
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="https://github.com/MicheleMarschner/Auth-Service"
+                        target="_blank"
+                        ><i class="fa fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!--      Fourth Project     -->
+              <div class="card">
+                <a href="#" target="_blank">
+                  <div class="card-picture card-picture-4">
+                    <i class="fa fa-upload"></i>
+                  </div>
+
+                  <h4 class="card-header">
+                    <span class="card-header-wrapper">Upload Service</span>
+                  </h4>
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      <b>Aim: </b>part of microservice architecture series to
+                      create standalone & reusable services -- Upload of Files
+                    </p>
+                    <p class="card-text">
+                      <b>Tech Stack: </b>JavaScript | Backend: NodeJS / Express,
+                      Multer, PassportJS
+                    </p>
+                  </div>
+
+                  <div class="card-footer d-flex justify-content-between">
+                    <small class="text-muted"
+                      >after 15 weeks in the bootcamp</small
+                    >
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="https://github.com/MicheleMarschner/upload-service"
+                        target="_blank"
+                        ><i class="fa fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!--      Fifth Project     -->
+              <div class="card">
+                <a href="https://pm-websolutions.com/" target="_blank">
+                  <div class="card-picture card-picture-5"></div>
+
+                  <h4 class="card-header">
+                    <span class="card-header-wrapper"
+                      >Silver Surfer
+                      <span class="sub-title">[Coming soon]</span></span
+                    >
+                  </h4>
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      <b>Aim: </b>Sharing & Social Media App for elderly people
+                      within a 2-member team
+                    </p>
+                    <p class="card-text">
+                      <b>Tech Stack: </b>JavaScript | Frontend: ReactJS &
+                      Bootstrap | Backend: NodeJS / Express, MongoDB / Mongoose
+                      | WebSockets, Cordova, TinyMCE
+                    </p>
+                  </div>
+
+                  <div class="card-footer d-flex justify-content-between">
+                    <small class="text-muted"
+                      >after 15 weeks in the bootcamp</small
+                    >
+                  </div>
+                </a>
+              </div>
             </div>
-
-
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-          Testimonials Section - End       ---------------->
-    
-    <!-------------      Contact Section - Start       ---------------->
+    <!-------------    Portfolio Section - End       ---------------->
 
-    <div id="contact" class="contact-section section-container">
+    <!-------------      Contact Section - Start      
+
+    <section id="contact" class="contact-section section-container">
         <div class="container">
 
             <div class="row section-title">
@@ -520,18 +473,18 @@
                 <div class="col-xs-12 col-sm-12 col-md-4">
                     <div class="left-contact">
                         <div class="left-contact-text">
-                            <i class="fa fa-map-marker"></i>  <!--You need to have class="fa" as well as whatever the icon's class is - fa fa rule-->
-                            <h2>Address / Street</h2>
-                            <p>No 123, Westwood Lane, USA</p> 
+                            <i class="fa fa-envelope"></i>
+                            <h2>Email</h2>
+                            <p>michele.marschner@gmail.com</p> 
                         </div>
                         <div class="left-contact-text">
-                            <i class="fa fa-phone"></i>
-                            <h2>Contact Number</h2>
-                            <p>+123 - 256 - 5456</p> 
+                            <i class="fa fa-linkedin"></i>
+                            <h2>Email</h2>
+                            <p>michele.marschner@gmail.com</p> 
                         </div>
                         <div class="left-contact-text">
-                            <i class="fa fa-globe"></i>
-                            <h2>Website Address</h2>
+                            <i class="fa fa-github"></i>
+                            <h2>GitHub Profile</h2>
                             <p>www.yourwebsite.com</p> 
                         </div>
                     </div>
@@ -541,9 +494,9 @@
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 box-contact-form">
     
                     <form id="contact-form" method="post"> 
-                        <!-- action="contact.php" novalidate="true"> -->
+                        action="contact.php" novalidate="true"> 
     
-                        <div class="messages"></div> <!--you can change the message in contact.php file -->
+                        <div class="messages"></div> 
     
                         <div class="controls">
     
@@ -582,23 +535,25 @@
     
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-------------      Contact Section - End       ---------------->
+         Contact Section - End       ---------------->
 
     <!-------------      Footer Section - Start       ---------------->
 
     <footer class="footer-section">
-        <div class="container">
-            <p class="copyright">&copy;2020 All Right Reserved By Michèle Marschner</p>
-        </div> 
-      </footer>
+      <div class="container">
+        <p class="copyright">
+          &copy;2020 All Right Reserved By Michèle Marschner
+        </p>
+      </div>
+    </footer>
 
     <!-------------      Footer Section - End       ---------------->
 
     <!-------------      Import Script Section - Start       ---------------->
 
-    <!--  jquery js file  -->      
+    <!--  jquery js file  -->
     <!--  ältere version genommen, da mit der neuen navbar expand/collapse nicht funktioniert   -->
     <script src="./js/jquery.3.4.1.js"></script>
 
@@ -620,11 +575,13 @@
     <!--  Owl Carousel js  -->
     <script src="./js/extern-js/owl.carousel.js"></script>
 
+    <!--particles js-->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+
     <!--  Main js file  -->
     <script src="./js/main.js"></script>
 
-
     <!-------------      Import Script Section - End       ---------------->
-
-</body>
+  </body>
 </html>
