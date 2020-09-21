@@ -1,5 +1,7 @@
 # Portfolio Template
 
+![Portfolio-picture](https://user-images.githubusercontent.com/49597398/93795448-ac2a2500-fc39-11ea-8db9-91613c108f9f.JPG)
+
 **Note:** All current content, including text, pictures and icons, serves just as a placeholder. In a next step the template will be transformed into an actual website by adjusting text, images and integrating own projects. 
 
 **Goal:** Create single page & responsive website that can be used as personal portfolio web page.  simplistic design  simplified navigation to 
