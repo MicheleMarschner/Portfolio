@@ -1,4 +1,25 @@
 $(document).ready(function () {
+  //********* page loader js
+
+  setTimeout(function () {
+    $('.loader_bg').fadeToggle();
+  }, 2000);
+
+  //************ smooth scroll js
+
+  $('a.smooth-menu,a.scroll-btn').on('click', function (e) {
+    e.preventDefault();
+    var anchor = $(this);
+    $('html, body')
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor.attr('href')).offset().top - 50,
+        },
+        1000
+      );
+  });
+
   //********** navbar - menu background color change while scroll
 
   $(window).on('scroll', function () {

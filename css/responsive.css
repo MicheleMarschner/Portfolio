@@ -4,69 +4,85 @@
     
 ==========================================*/
 
-
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-
 }
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
-    .navbar-collapse li {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .navbar-collapse li {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    .about-me-left img, 
-    .about-me-left::before{
-        margin-left: 0;
-    }
-
+  .about-me-left img,
+  .about-me-left::before {
+    margin-left: 0;
+  }
 }
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
-    
-    .navbar-collapse {
-        margin: 0 auto;
-        height: 80vh;
-        max-height: 100%;
-        max-width: 80vw;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
+  .navbar-collapse {
+    margin: 0 auto;
+    height: auto;
+    max-width: 80vw;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 
-    .navbar-nav {
-        text-align: center;
-    }
+  .navbar-nav {
+    text-align: center;
+  }
 
-    .navbar-nav li {
-        margin: 9px 0;
-    }
+  .navbar-nav li {
+    margin: 9px 0;
+  }
 
-    .navbar-collapse li a:hover::after{
-        width: 8%;
-    }
+  .navbar-collapse li a:hover::after {
+    width: 8%;
+  }
 
-    .navbar.sticky-navigation {
-        height: 4rem;
-    }
+  .navbar.sticky-navigation {
+    height: 4rem;
+  }
 
-    .sticky-navigation .navbar-collapse li a{
-        color: var(--secondary-color);
-    }
+  .sticky-navigation .navbar-collapse li a {
+    color: var(--secondary-color);
+  }
 
-    .sticky-navigation .navbar-collapse li a:hover::after{
-        width: 8%;
-    }
+  .sticky-navigation .navbar-collapse li a:hover::after {
+    width: 8%;
+  }
 
-    .about-me-right{
-        padding-top: 2rem;
-    }
+  .about-me-right {
+    padding-top: 2rem;
+  }
 
-    .skill-items-left, 
-    .skill-items-right{
-        padding: 0;
-    }
-} 
+  .skill-items-left,
+  .skill-items-right {
+    padding: 0;
+  }
 
+  .footer-section .container {
+    align-items: center;
+    line-height: 1.4rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .social-icon--footer ul {
+    text-align: center;
+  }
+
+  .social-icon--footer ul li {
+    display: block;
+  }
+
+  .social-icon--footer ul li a:link,
+  .social-icon--footer ul li a:visited {
+    font-size: 1rem;
+  }
+
+  .footer-section .copyright {
+    width: 60%;
+  }
+}

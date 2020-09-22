@@ -167,6 +167,85 @@ img {
 
 /*-------------      2. Default Section - End       ----------------*/
 
+.loader_bg {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    #fde6bd,
+    #a1c5ab,
+    #f4dd51,
+    #d11e48,
+    #632f53
+  );
+  z-index: 1800;
+  transition: all 0.3s;
+}
+
+.spinner__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: black;
+
+  filter: blur(10px) contrast(18);
+  mix-blend-mode: multiply;
+}
+
+.spinner__box {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.spinner__box:nth-child(odd) {
+  animation: spinLeft 2.5s 0.2s linear both infinite;
+}
+
+.spinner__box:nth-child(even) {
+  animation: spinRight 1s 0.4s linear both infinite;
+}
+
+.spinner__box:nth-child(2n) {
+  animation: pulse 2s ease-in-out 0.1s infinite;
+}
+.spinner__box:nth-child(4n) {
+  animation-direction: reverse;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.8);
+  }
+  70% {
+    transform: scale(0.6);
+  }
+}
+
+@keyframes spinLeft {
+  from {
+    transform: rotate(0deg) translate(50px);
+  }
+  to {
+    transform: rotate(360deg) translate(50px);
+  }
+}
+@keyframes spinRight {
+  from {
+    transform: rotate(360deg) translate(50px);
+  }
+  to {
+    transform: rotate(0deg) translate(50px);
+  }
+}
+
+/*-------------     Spinner ends        ------------------*/
+
 /*-------------      3. Header Section - Start       ----------------*/
 
 .navbar-section .navbar {
@@ -494,6 +573,90 @@ canvas {
     border-left-color: var(--highlight-color);
   }
 }
+
+/*---  Mouse animation starts---*/
+
+@-webkit-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+@keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+.mouse-scroll {
+  position: absolute;
+  bottom: 25%;
+  left: 48%;
+  display: inline-block;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-top: 5%;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.mouse-scroll .mouse {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 60px;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid #ffffff;
+  border-radius: 23px;
+}
+
+.mouse-scroll .mouse .mouse-movement {
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: #ffffff;
+  border-radius: 50%;
+  -webkit-animation: scroll-ani 2s linear infinite;
+  animation: scroll-ani 2s linear infinite;
+}
+
+/*---mouse animation ends---*/
+
 /*-------------      4. Hero Section - End       ----------------*/
 
 /*-------------      5. About Me Section - Start       ----------------*/
@@ -728,7 +891,7 @@ canvas {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url('../img/Portfolio/ToDoApp.JPG') center;
+    url('../img/Portfolio/ToDoApp-picture.png') center;
   background-size: cover;
 }
 
@@ -887,6 +1050,7 @@ canvas {
 }
 
 .footer-section .container {
+  align-items: centre;
   position: absolute;
   bottom: 0%;
   min-width: 100%;
