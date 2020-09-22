@@ -98,7 +98,7 @@
       <div class="hero-content">
         <h2>Hi, I am<span class="highlight text-uppercase">Michèle</span>.</h2>
         <h4><span class="typed"></span></h4>
-        <div class="social-icon">
+        <div class="social-icon social-icon--header">
           <ul>
             <li>
               <a
@@ -153,14 +153,16 @@
           <div class="col-md-8 ml-auto about-me-right">
             <div class="row profile-summary">
               <p>
-                I am a versatile and analytical young IT professional with a
-                strong background in business administration and knowledge
-                across various industries such as finance, ecommerce, food and
-                media.
+                The smallest common denominator in all of my previous
+                experiences is at the same time my biggest passion: To analyse
+                situations, to abstract and dismantle them in the context of the
+                bigger picture and to find pragmatic solutions.
               </p>
               <p>
-                Equipped with a quick perception and an insatiable curiosity, I
-                am always looking to expand my comfort zone.
+                Currently, I am interested in a junior fullstack developer role
+                where I can contribute my analytical-integrative thinking and
+                logical abilities coupled with my strong interpersonal skills to
+                a motivated team to create together something that matters.
               </p>
             </div>
 
@@ -226,12 +228,28 @@
             </div>
 
             <div class="row button">
-              <a
-                href="https://cv-en-e67935.netlify.app"
-                class="primary-button"
-                target="_blank"
-                >show cv</a
-              >
+              <a href="#popup-cv" class="primary-button">show cv</a>
+            </div>
+            <div class="popup" id="popup-cv">
+              <div class="popup__content popup__content--pdf">
+                <a href="#about" class="popup__close">&times;</a>
+                <iframe
+                  src="./img/AboutMe/MicheleMarschner - CV_EN.pdf#page=1"
+                  width="100%"
+                  height="100%"
+                  allowfullscreen="true"
+                  style="border: none"
+                >
+                  <p>
+                    Your browser does not support PDFs.
+                    <a
+                      href="./img/AboutMe/MicheleMarschner - CV_EN.pdf"
+                      download
+                      >Download my CV here</a
+                    >
+                  </p>
+                </iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -248,7 +266,7 @@
     >
       <div class="container">
         <div class="row section-title">
-          <h2>my <span>portfolio</span></h2>
+          <h2>recent <span>projects</span></h2>
           <div class="header-bar"></div>
         </div>
 
@@ -333,7 +351,7 @@
 
               <!--      Third Project     -->
               <div class="card">
-                <a href="#" target="_blank">
+                <a href="#portfolio">
                   <div class="card-picture card-picture-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -384,7 +402,7 @@
 
               <!--      Fourth Project     -->
               <div class="card">
-                <a href="#" target="_blank">
+                <a href="#portfolio">
                   <div class="card-picture card-picture-4">
                     <i class="fa fa-upload"></i>
                   </div>
@@ -542,10 +560,40 @@
     <!-------------      Footer Section - Start       ---------------->
 
     <footer class="footer-section">
-      <div class="container">
+      <div
+        class="container d-flex justify-content-between align-items-end pb-4"
+      >
         <p class="copyright">
           &copy;2020 All Right Reserved By Michèle Marschner
         </p>
+        <div class="social-icon">
+          <ul>
+            <li>
+              <a
+                href="mailto:michele.marschner@gmail.com"
+                target="_blank"
+                title="Email"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mich%C3%A8le-marschner-89578a115/"
+                target="_blank"
+                title="Linkedin"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/MicheleMarschner"
+                target="_blank"
+                title="GitHub"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
 
