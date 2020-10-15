@@ -1050,11 +1050,11 @@ canvas {
 }
 
 .footer-section .container {
-  align-items: centre;
+  align-items: center;
   position: absolute;
   bottom: 0%;
   min-width: 100%;
-  text-align: center;
+  text-align: bottom;
   z-index: 10000;
   color: var(--secondary-color);
 }
